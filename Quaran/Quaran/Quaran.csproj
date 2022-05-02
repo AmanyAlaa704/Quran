@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F984573E-98D8-41AA-A64E-16A61B331BB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quaran</RootNamespace>
+    <AssemblyName>Quaran</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AhadethFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AhadethFrm.Designer.cs">
+      <DependentUpon>AhadethFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlanbiaStoriesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlanbiaStoriesFrm.Designer.cs">
+      <DependentUpon>AlanbiaStoriesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\AccountList.cs" />
+    <Compile Include="Classes\AlanbiaaStoriesList.cs" />
+    <Compile Include="Classes\AlanbiaStory.cs" />
+    <Compile Include="Classes\hadeathDetail.cs" />
+    <Compile Include="Classes\headethList.cs" />
+    <Compile Include="Classes\ReligionBook.cs" />
+    <Compile Include="Classes\ReligionBooksList.cs" />
+    <Compile Include="Classes\SooraDetails.cs" />
+    <Compile Include="Classes\SooraDetailsList.cs" />
+    <Compile Include="Classes\TafserDetail.cs" />
+    <Compile Include="Classes\TafserDetailList.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuaranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuaranFrm.Designer.cs">
+      <DependentUpon>QuaranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterFrm.Designer.cs">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReligionBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReligionBooks.Designer.cs">
+      <DependentUpon>ReligionBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentData.Designer.cs">
+      <DependentUpon>StudentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TafserFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TafserFrm.Designer.cs">
+      <DependentUpon>TafserFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AhadethFrm.resx">
+      <DependentUpon>AhadethFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlanbiaStoriesFrm.resx">
+      <DependentUpon>AlanbiaStoriesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QuaranFrm.resx">
+      <DependentUpon>QuaranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterFrm.resx">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReligionBooks.resx">
+      <DependentUpon>ReligionBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentData.resx">
+      <DependentUpon>StudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TafserFrm.resx">
+      <DependentUpon>TafserFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Media\Al-Ahadeth\01.pdf" />
+    <None Include="Media\Al-Ahadeth\02.pdf" />
+    <None Include="Media\Al-Ahadeth\03.pdf" />
+    <None Include="Media\goza amaa\PDFs\078.pdf" />
+    <None Include="Media\goza amaa\PDFs\079.pdf" />
+    <None Include="Media\goza amaa\PDFs\080.pdf" />
+    <None Include="Media\goza amaa\PDFs\081.pdf" />
+    <None Include="Media\goza amaa\PDFs\082.pdf" />
+    <None Include="Media\goza amaa\PDFs\083.pdf" />
+    <None Include="Media\goza amaa\PDFs\084.pdf" />
+    <None Include="Media\goza amaa\PDFs\085.pdf" />
+    <None Include="Media\goza amaa\PDFs\086.pdf" />
+    <None Include="Media\goza amaa\PDFs\087.pdf" />
+    <None Include="Media\goza amaa\PDFs\088.pdf" />
+    <None Include="Media\goza amaa\PDFs\089.pdf" />
+    <None Include="Media\goza amaa\PDFs\090.pdf" />
+    <None Include="Media\goza amaa\PDFs\091.pdf" />
+    <None Include="Media\goza amaa\PDFs\092.pdf" />
+    <None Include="Media\goza amaa\PDFs\093.pdf" />
+    <None Include="Media\goza amaa\PDFs\094.pdf" />
+    <None Include="Media\goza amaa\PDFs\095.pdf" />
+    <None Include="Media\goza amaa\PDFs\096.pdf" />
+    <None Include="Media\goza amaa\PDFs\097.pdf" />
+    <None Include="Media\goza amaa\PDFs\098.pdf" />
+    <None Include="Media\goza amaa\PDFs\099.pdf" />
+    <None Include="Media\goza amaa\PDFs\100.pdf" />
+    <None Include="Media\goza amaa\PDFs\101.pdf" />
+    <None Include="Media\goza amaa\PDFs\102.pdf" />
+    <None Include="Media\goza amaa\PDFs\103.pdf" />
+    <None Include="Media\goza amaa\PDFs\104.pdf" />
+    <None Include="Media\goza amaa\PDFs\105.pdf" />
+    <None Include="Media\goza amaa\PDFs\106.pdf" />
+    <None Include="Media\goza amaa\PDFs\107.pdf" />
+    <None Include="Media\goza amaa\PDFs\108.pdf" />
+    <None Include="Media\goza amaa\PDFs\109.pdf" />
+    <None Include="Media\goza amaa\PDFs\110.pdf" />
+    <None Include="Media\goza amaa\PDFs\111.pdf" />
+    <None Include="Media\goza amaa\PDFs\112.pdf" />
+    <None Include="Media\goza amaa\PDFs\113.pdf" />
+    <None Include="Media\goza amaa\PDFs\114.pdf" />
+    <None Include="Media\ReligionBooks\01.pdf" />
+    <None Include="Media\ReligionBooks\02.pdf" />
+    <None Include="Media\Tafser\28.pdf" />
+    <None Include="Media\Tafser\29.pdf" />
+    <None Include="Media\Tafser\30.pdf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\goza amaa\Aduio\078.mp3" />
+    <Content Include="Media\goza amaa\Aduio\079.mp3" />
+    <Content Include="Media\goza amaa\Aduio\080.mp3" />
+    <Content Include="Media\goza amaa\Aduio\081.mp3" />
+    <Content Include="Media\goza amaa\Aduio\082.mp3" />
+    <Content Include="Media\goza amaa\Aduio\083.mp3" />
+    <Content Include="Media\goza amaa\Aduio\084.mp3" />
+    <Content Include="Media\goza amaa\Aduio\085.mp3" />
+    <Content Include="Media\goza amaa\Aduio\086.mp3" />
+    <Content Include="Media\goza amaa\Aduio\087.mp3" />
+    <Content Include="Media\goza amaa\Aduio\088.mp3" />
+    <Content Include="Media\goza amaa\Aduio\089.mp3" />
+    <Content Include="Media\goza amaa\Aduio\090.mp3" />
+    <Content Include="Media\goza amaa\Aduio\091.mp3" />
+    <Content Include="Media\goza amaa\Aduio\092.mp3" />
+    <Content Include="Media\goza amaa\Aduio\093.mp3" />
+    <Content Include="Media\goza amaa\Aduio\094.mp3" />
+    <Content Include="Media\goza amaa\Aduio\095.mp3" />
+    <Content Include="Media\goza amaa\Aduio\096.mp3" />
+    <Content Include="Media\goza amaa\Aduio\097.mp3" />
+    <Content Include="Media\goza amaa\Aduio\098.mp3" />
+    <Content Include="Media\goza amaa\Aduio\099.mp3" />
+    <Content Include="Media\goza amaa\Aduio\100.mp3" />
+    <Content Include="Media\goza amaa\Aduio\101.mp3" />
+    <Content Include="Media\goza amaa\Aduio\102.mp3" />
+    <Content Include="Media\goza amaa\Aduio\103.mp3" />
+    <Content Include="Media\goza amaa\Aduio\104.mp3" />
+    <Content Include="Media\goza amaa\Aduio\105.mp3" />
+    <Content Include="Media\goza amaa\Aduio\106.mp3" />
+    <Content Include="Media\goza amaa\Aduio\107.mp3" />
+    <Content Include="Media\goza amaa\Aduio\108.mp3" />
+    <Content Include="Media\goza amaa\Aduio\109.mp3" />
+    <Content Include="Media\goza amaa\Aduio\110.mp3" />
+    <Content Include="Media\goza amaa\Aduio\111.mp3" />
+    <Content Include="Media\goza amaa\Aduio\112.mp3" />
+    <Content Include="Media\goza amaa\Aduio\113.mp3" />
+    <Content Include="Media\goza amaa\Aduio\114.mp3" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
